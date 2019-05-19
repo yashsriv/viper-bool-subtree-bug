@@ -24,4 +24,8 @@ func main() {
 
 	fmt.Printf("from subtree: %v\n", databaseConfig.GetBool("ssl"))
 	fmt.Printf("from actual: %v\n", viper.GetBool("pg.database.ssl"))
+	fmt.Printf("from subtree: %v\n", databaseConfig.GetString("name"))
+	fmt.Printf("from actual: %v\n", viper.GetString("pg.database.name"))
+	fmt.Printf("%v\n", databaseConfig.AllSettings())
+	fmt.Printf("%v\n", viper.AllSettings())
 }

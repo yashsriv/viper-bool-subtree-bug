@@ -1,3 +1,4 @@
 pg:
   database:
+    name: "default"
     ssl: false
